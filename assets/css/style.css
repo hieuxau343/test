@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #4daf54;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(to right, #4daf54, #3d8880);
+}
+.card {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  margin: 120px auto;
+  background: #272d40;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 25px;
+}
+.card_heart,
+.card_cart {
+  position: absolute;
+  top: 12px;
+  font-size: 25px;
+}
+.card_cart {
+  right: 20px;
+}
+.card_img img {
+  object-fit: cover;
+  width: 90%;
+  height: 100%;
+  transition: 0.5s;
+}
+.card:hover img {
+  transform: translateY(-90px) rotate(-45deg);
+}
+.card_title,
+.card_price {
+  font-size: 20px;
+  text-align: center;
+}
+.card_title h3 {
+  color: var(--primary-color);
+}
